@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en>"
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Survey Form</title>
+  </head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this form with the required information</p>
+  <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+  <fieldset>
+    <label id="name-label" for="name">Name: <input id="name" name="name" type="text" required placeholder="Enter your name" /></label>
+    <label id="email-label" for="email" >Email: <input id="email" name="email" type="email" required placeholder="Enter your email address" /></label>
+   <label id="number-label" for="number">Age: <input id="number" type="number" name="age" min="13" max="120" placeholder="Enter your age" /></label>
+   <label id="dropdown-label" for="dropdown" >Please rate our service: 
+     <select id="dropdown" name="feedback">
+       <option value="">(select one)</option>
+       <option value="1">Very Good</option>
+       <option value="2">Good</option>
+       <option value="3">Satisfactory</option>
+       <option value="4">Bad</option>
+       <option value="5">Very Bad</option>
+          </select>
+        </label>
+      <p>Would you recommend our service?</p>
+      <label id="radio1-label" for="radio-button1"><input id="radio-buttons" type="radio" name="recommend" /> Yes</label>
+      <label id="radio-label" for="radio-button2"><input id="radio-button2" type="radio" name="recommend" /> No</label>
+      <p>What services have you availed from us?</p>
+      <label id="checkbox1-label" for="checkbox1"><input id="checkbox1" type="checkbox"  name="checkbox1" value="Editing" /> Editing</label>
+      <label id="checkbox2-label" for="checkbox2"><input id="checkbox2" type="checkbox"  name="checkbox2" value="Content Writing" /> Content Writing</label>
+      <label id="checkbox3-label" for="checkbox3"><input id="checkbox3" type="checkbox"  name="checkbox3" value="Printing" /> Printing</label>
+      <label id="checkbox4-label" for="checkbox4"><input id="checkbox4" type="checkbox"  name="checkbox4" value="Website Development" /> Website Development</label>
+      <label id="checkbox5-label" for="checkbox5"><input id="checkbox5" type="checkbox"  name="checkbox5" value="App Development" /> App Development</label>
+      <label id="checkbox6-label" for="checkbox6"><input id="checkbox6" type="checkbox"  name="checkbox" value="Upgradation" /> Upgradation</label>
+      <label id="textarea-label" for="textarea">Any comments or suggestions?<textarea id="textarea" name="comments" rows="4" cols="40" placeholder="Enter your comments or suggestion here..."></textarea>
+        </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+  </body>
+</html>
