@@ -8,7 +8,7 @@
   </head>
 <body>
   <h1 id="title">Survey Form</h1>
-  <p id="description">Please fill out this form with the required information</p>
+  <p id="description" class="description">Please fill out this form with the required information</p>
   <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
   <fieldset>
     <label id="name-label" for="name">Name: <input id="name" name="name" type="text" required placeholder="Enter your name" /></label>
@@ -24,10 +24,10 @@
        <option value="5">Very Bad</option>
           </select>
         </label>
-      <p>Would you recommend our service?</p>
+      <p class="recommendation">Would you recommend our service?</p>
       <label id="radio1-label" for="radio-button1"><input id="radio-buttons" type="radio" name="recommend" /> Yes</label>
       <label id="radio-label" for="radio-button2"><input id="radio-button2" type="radio" name="recommend" /> No</label>
-      <p>What services have you availed from us?</p>
+      <p class="services">What services have you availed from us?</p>
       <label id="checkbox1-label" for="checkbox1"><input id="checkbox1" type="checkbox"  name="checkbox1" value="Editing" /> Editing</label>
       <label id="checkbox2-label" for="checkbox2"><input id="checkbox2" type="checkbox"  name="checkbox2" value="Content Writing" /> Content Writing</label>
       <label id="checkbox3-label" for="checkbox3"><input id="checkbox3" type="checkbox"  name="checkbox3" value="Printing" /> Printing</label>
